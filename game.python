@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(15, 10))
+plt.barh(["Tournament Games","Non Tournament Games"],[len(tournament_games),len(non_tournament_games)])
+plt.text(len(tournament_games),0,str(len(tournament_games)))
+plt.text(len(non_tournament_games),1,str(len(non_tournament_games)))
+plt.xlabel("Number of Games")
+plt.title("Distribution of Game Types")
+plt.show()
